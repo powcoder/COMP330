@@ -1,0 +1,76 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+Grading Rubric for Assignment 2
+
+
+********************
+Q1- Johanna + James:
+********************
+
+Johanna- a&b:Each question was out of 4. For each question, I took 2 marks off for 1 basic mistake- if a case was missed (ex. for a, many people forgot that a string of all b's has an even number of a's!),  or if a symbol was left off, ect. Any more than 1 error, I gave 0 to that question. I did not dock marks for longish answers.
+
+James- c&d: almost all got c) right, and the few that didn’t it was a pretty blatant 0 marks. For d) I gave 2 points if they had a basic understanding but missed the major edge case (can have abba) or if they missed 2  ‘smaller’ edge cases, and  4 points if they missed small edge cases but showed a decent grasp of the problem at hand, and 0 points if they missed more than 2 ‘smaller’ edge cases.I also didn’t take away any marks for length of their expressions.
+
+Final thoughts:
+-some students (but not too many) seem to be misusing the or ( + ) and concatenate ( \cdot ) operators
+-a number of students wrote DFAs for the languages first and then went through the process of converting those to regular expressions. This is not necessary unless specified, but if it helps you to solve the problem then you're welcome to do so
+
+
+
+***********
+Q2- Roland:
+***********
+
+Most people got full points for this question. Those who didn't generally lost 1 or 2 points for forgetting to write small things (e.g.: in the inductive step they assume the hypothesis holds for all words instead of all words of at most a certain length) or for making a small claim that was wrong/unjustified (e.g.: saying that the alphabet only had one letter). If a person's writeup was correct but clumsy (some people skipped the base case) then that was minus 5 points, but if it was clear they didn't know how to do induction at all then that was minus 10 points.
+
+Also, a couple of people misunderstood notation - for example, some people thought that the "*" in the inductive definition of the transition function was a variable, so they wrote "*+1" in their proof. That was also minus 1 point.
+
+
+
+****************
+Q3- Molly + Lin:
+****************
+
+Molly- a:
+-10: For people who intended to pick x, y, z. It is the demon's move not yours. This is a conceptional misunderstanding about quantifier. 
+        example: make demon choose p and then set w = aabaaa, x = aa, y =b, z = aaa and then claim aabbaaa is not in L. 
+-5: For people who understand that they cannot choose what is xyz but chose a string(w) that eventually failed to prove a contradiction
+        example: set w = a^pb^0a^p = a^2p or w = a^ib^ja^(i+j) with random i and j
+-2~5: For people who failed to apply constraints (the condition for pumping lemma)
+        example: set w = a^pb^pa^2p and then claim y = b^k 
+                         force |xy| = p instead of |xy|<= p
+-1: For people wrongly claim xy^iz not in L
+        example: for xy^2z = a^(p+l)ba^(p+1), the reason it is not in L is (p+l)+1 != p+1, l>0.
+-0.5~2: Other minor mistakes. (typo etc.) 
+
+Lin- b:
+0: does not show proper understanding of the Pumping Lemma and quantifiers
+1-3: incomplete understanding of the Pumping Lemma like choosing a string with a length that has nothing to do with p
+4-5: clearly understood the Pumping Lemma and provided good logic but the string chosen did not work (usually w = xxR)
+6-9: combination of "typos" and errors involving the conditions on xyz; the most common ones: did not explicitly specify that y>0 (quite important for the proof to work), setting |xy| = p instead of <=, setting the size of the alphabet to be exactly 2 with no extension to larger alphabets, did not explain what y consists of (usually only a's)
+10: good!
+
+
+
+**************
+Q4- Florestan:
+**************
+
+Overall, most people got this one right. Some people however have clearly no clue about how the pumping lemma works and don't understand the use of quantifier / what the devil picks and what they can pick. A number of them also tried looking at finite strings which are independent of p for the square-length language (e.g. abab, which.. I guess has length 4 ?), I don't really understand where this is coming from because those who did this usually got 2) right when they did that. To clarify the grading of Q4, I gave 0 if the students had 2) right but a completely nonsensical 1) which showed that they had no understanding of pumping lemma arguments. If they had the right idea and the lemma was applied properly but some minor computation issues I subtracted 2 points. Something a significant number of students did : they chose strings with p/2 letters, or other choices which might not make sense depending on the value of p. This is a very minor error of course, but depending on the language of interest might be more problematic (if membership had something to do with parity for example, assuming p to be even might be more problematic).
+
+
+
+*******
+Q5- Yue
+*******
+
+Most people get full marks in this questions, but some people fail to point out that the state S3 is unreachable and mistakenly said S2 and S3 are equivalent will lose 2 or 3 points. Besides, some intermediate steps are needed (the original automaton, or the table or some explanation), otherwise 2 points would be taken off.
+
+
+

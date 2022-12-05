@@ -1,0 +1,20 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+(shuffle '(a b) '(c d))
+;Value 13: ((a b c d) (a c b d) (a c d b) (c a b d) (c a d b) (c d a b))
+
+(shuffle '(a b c) '(1 2 3))
+;Value 14: ((a b c 1 2 3) (a b 1 c 2 3) (a b 1 2 c 3) (a b 1 2 3 c) 
+(a 1 b c 2 3) (a 1 b 2 c 3) (a 1 b 2 3 c) (a 1 2 b c 3) (a 1 2 b 3 c) 
+(a 1 2 3 b c) (1 a b c 2 3) (1 a b 2 c 3) (1 a b 2 3 c) (1 a 2 b c 3) (1 a 2 b 3 c) 
+(1 a 2 3 b c) (1 2 a b c 3) (1 2 a b 3 c) (1 2 a 3 b c) (1 2 3 a b c)) 
+
+You can see that the letters a, b, c are never scrambled relative to each
+other; the same is true of the numbers 1, 2 and 3.  The letters and the
+numbers are shuffled, they are not scrambled (permuted).

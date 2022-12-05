@@ -1,0 +1,55 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+**********************
+Midterm Grading Scheme
+**********************
+
+*******************
+Q1.a: Lin and James
+*******************
+
+Overall Feedback: Most students got this very easily. There were a lot of creative solutions here! There were a number of students
+who had slightly redundant expressions, an example being (b*(aa)*b*)*, which we did not penalize, though expressions were overly long or
+redundant were slightly penalized. There are cases where marks were taken off for multiple reasons.
+      - 1 For overly redundant expressions
+      - 2 For very long and convoluted expressions
+      - 4 Using \cup (Union) instead of +. Unions are not a part of the regular expressions vocabulary.
+      - 4 One logical mistake, still showing an understanding of the material. (As example missing that the (aa)*b* pattern could repeat)
+      - 8 Logical mistake, showing some lack of understanding (As example, the regex doesn't capture very simple cases such as 'baab')
+
+
+************************
+Q1.b: Roland and Johanna
+************************
+
+Correct 4 state DFA: -5
+Missing transition arrows or state labels: - (2 or 3), depending on how many missing
+Slightly wrong 3 state DFA (e.g. one wrong transition): -7
+Very wrong 3 state DFA (e.g. many wrong transitions): -12
+Two state DFA: -15
+
+
+*********************************************
+Q2: Dr. Panangaden, Florestan, Lin, and James
+*********************************************
+
+First off: The vast majority of people chose a string with p-2 in it..but what if p=1? We didn't take points off for that, but the correct version would have been a^p+2b^p and not a^pb^p-2.
+
+If you chose a string that was not in the language to begin with but your reasoning was sound, you should have gotten -20pts.
+
+If you made assumptions on what string the devil chooses (for example assumed y=a^1 instead of a general a^k) you should have lost -15pts.
+
+For minor confusions of mistakes we only took 5points off when the general idea was clearly right.
+
+
+**
+Q3
+**
+
+Right or wrong, each out of 4.

@@ -1,0 +1,123 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+*********************
+  A3 Marking Scheme
+*********************
+
+****************
+Q1. Molly + Yue
+****************
+
+(a) 3:  -3 for wrong answer, -1 for wrong justification
+(b) 7: -4 for wrong answer, -1~3 for wrong justification
+(c) 5: -2 for wrong answer, -1~3 for wrong justification
+(d) 5: -5 for wrong answer, -2 for wrong justification
+
+feedback:
+Almost everyone gets correct answer for part a and d. For part B, people often ignore the magic of concatenating Sigma*. For part c, most of the incorrect answer argues that since the union of two regular languages are still regular. But this only works for finite number of unions. 
+
+
+******************
+Q2. Lin + Johanna
+******************
+
+A few common errors:
+
+-didn't justify y being entirely a's (just stated it) -2
+-didn't mention |y| > 0   -2
+-incorrectly chose i=1  -2
+-chose a starting string with |a| < p and assumed y is all a   -8
+-chose i s.t. it is not an integer -2
+-incorrectly pumped string (ex. choose i = 2, then say string is xy^2z) -2
+-stated |xy| < p: -1 (especially doesn't make sense with |y| <= p; what if |y| = p!)
+-used an example: -20 (explicitly choosing p and xyz -> not understanding quantifiers)
+-stated |xy| = p: -2
+
+
+**************
+Q3. Florestan
+**************
+
+A disturbing amount of students were totally fine both using the pumping lemma to prove that the language is not regular AND proving that it satisfies the pumping lemma for some p.
+
+Here's a hopefuly useful reminder of how the pumping lemma works:
+
+"If the language is regular => THERE EXISTS a p such that for any string w of length >p we have blabla.."
+
+So what you have been doing so far to prove that languages are not regular using the pumping lemma is to use a proof by contradiction, namely:
+
+"Suppose that the language is regular, then there should be a p such that for any string w of length >p we have blabla.. But hey, look at this string w of length>p I chose, it doesn't verify blabla..!  But this is a problem because EVERY STRING w of lengths>p should verify blabla. QED"
+
+So in a proof by contradiction it's enough to give ONE w that doesn't work, precisely because the pumping lemma says it should work FOR ALL w of length>p. But when you're now trying to show that the language can be pumped for some value of p, remember that you're no longer trying to do a proof by contradiction, so you don't just want to pick a w (the string you expressed in terms of p) and show that it works for this particular one, you precisely want to show that it works FOR ALL w! This was by far the most common error and I only gave 7 points if this is what you did, because that means you did not understand what the pumping lemma said up to this point! (I gave 5 points if your proof that the language was not regular was correct + 2 if you explained why there was no contradiction in having a non regular language satifying the pumping lemma.)
+
+There's also a a kernel of students who thought that fixing p meant that the string w was of length <p. I'm not sure where this came from?
+
+And then there were a lot of minor mistakes with correct proofs that used p=1. Remember that in the pumping lemma you CAN delete the subword for i=0. So any proof with i>0 is wrong, you needed to account for that, and this is why p>=2 was necessary because of the case with two a's in the beginning of the word: you could delete an a if you chose y=a. For any minor mistake of this kind I subtracted 3 points. So a lot of you will have 17 on this question.
+
+
+
+**********
+Q4. James
+**********
+
+5 states single mistake (i.e missing transition ) -3
+
+5 states larger mistake or multiple small mistakes -5
+
+<5 states only state missing is the dead state -2
+
+<5 states otherwise -10 ( If two states in the DFA were clearly equivalent, making it easily reduce to <5 states, that was considered here)
+
+>5 states -15
+
+Mistake in Regex -2
+
+Regex completely wrong or missing -5
+
+ 
+
+Notes:
+
+It should be clear by now that you don't need more than one dead state, as DFA minimization will always merge them in to one state (all exiting transitions are the same, self-loops).
+
+The '+' operator  is an OR operator when used in Regular Expressions. So b+(bb)* would be: a single 'b' OR an even number of 'b's {e, b, bb, bbbb, ... }
+
+Concatenation can be shown just by joining the two expressions. b(bb)* would be an odd number of 'b's {b, bbb, ...}
+
+Please label start states in automata. Labelling a state as s_0 does not nescessarily imply that it is the start state (Note: Sometimes labels are used to provide some intuition as to what the state is,
+
+so s_0 might indicate for example the state where the last character we saw was a '0').
+
+
+
+***********
+Q5. Roland
+***********
+
+A lot of people are missing the definition of the language, they think that L = {a^nb^m | n = m}.
+I didn't punish this because it changes essentially nothing in the proof, I just wanted to point this out.
+
+
+-Explictly giving classes, but not showing that they're distinct: -10
+-Proof relies on claims that are wrong: -10
+-Showing that strings belong to the same equivalence class instead of showing that the classes are distinct: -10
+
+-Messing up quantifies: -5
+-Showing the classes are distinct, but its not rigourous: -5
+-Claiming that concatenation is commutative: -5
+
+-Showing that [a^i] =/= [a^{i+1}], this isn't the same as showing [a^i] =/= [a^j] for i=/=j 
+because non-equivalence isn't transitive: -3
+
+-Giving two different families of strings and showing that these two families aren't equivalent.
+They may of had the correct idea, but all they showed was that there were at least two equivalence classes: -2
+-Proof is a complete mess: -2
+
+-Writing b^{i-1}, since you can have i=0 and b^{-1} doesn't make sense: -1
+-Minor proof errors that don't affect the overall validity of the proof: -1
